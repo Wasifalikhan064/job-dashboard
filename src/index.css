@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Overlay Styling */
+.fixed.inset-0 {
+     /* Semi-transparent overlay */
+    z-index: 40; /* Ensure the overlay is above other content */
+  }
+  
+  /* Sidebar Animation */
+  .fixed.left-0 {
+    transform: translateX(-100%); /* Sidebar off-screen */
+  }
+  
+  .fixed.left-0.translate-x-0 {
+    transform: translateX(0); /* Sidebar in view */
+  }
+  
+  .transition-transform {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding */
+  }
+  
